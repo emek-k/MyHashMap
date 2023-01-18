@@ -73,7 +73,6 @@ public class MyHashTable<K, V> {
     public void remove(K key){
         int index = hash(key);
         Entry current = table[index];
-        //previous nie moze byc nullem powodowalo to bledy
         Entry previous = null;
         //mamy do rozpatrzenia 3 przypadki
         //1) lista jest pusta - nic sie nie dzieje
